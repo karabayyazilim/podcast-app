@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\FeedStoreRequest;
+use App\Http\Requests\FeedUpdateRequest;
 use App\Models\Feed;
 use App\Services\FeedService;
 use Illuminate\Http\Request;
