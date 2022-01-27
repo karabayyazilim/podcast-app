@@ -66,7 +66,7 @@
                     <div class="col-12" style="margin-top: -150px">
                         <div class="player">
                             <audio id="player2" preload="none" controls style="max-width: 100%">
-                                <source src="/storage/{{$latestFeed->src_url}}" type="audio/mp3">
+                                <source src="/storage/{{$latestFeed->src_url ?? null}}" type="audio/mp3">
                             </audio>
                         </div>
                     </div>
