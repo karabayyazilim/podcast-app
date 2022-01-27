@@ -58,8 +58,6 @@
 <div class="navbar-right">
     <ul class="navbar-nav">
         <li class="dropdown">
-            <a href="javascript:void(0);" class="dropdown-toggle" title="App" data-toggle="dropdown" role="button"><i
-                    class="zmdi zmdi-apps"></i></a>
             <ul style="height: 300px;" class="dropdown-menu slideUp2">
                 <li class="header">Uygulama Kısayolları</li>
                 <li class="body">
@@ -76,7 +74,7 @@
         </li>
         <li><a href="javascript:void(0);" class="js-right-sidebar" title="Setting"><i
                     class="zmdi zmdi-settings zmdi-hc-spin"></i></a></li>
-        <li><a href="{{route('logout')}}" class="mega-menu" title="Sign Out"><i class="zmdi zmdi-power"></i></a></li>
+        <li><a href="{{route('admin.logout.user')}}" class="mega-menu" title="Sign Out"><i class="zmdi zmdi-power"></i></a></li>
     </ul>
 </div>
 <button class="btn btn-primary btn-icon mobile_menu" type="button"><i class="zmdi zmdi-sort-amount-desc"></i></button>
@@ -105,7 +103,7 @@
                         class="zmdi zmdi-radio"></i><span>Podcast</span></a></li>
             <li class="{{ (request()->is('admin')) ? 'active' : '' }}"><a href="{{route('admin.speaker.index')}}"><i
                         class="zmdi zmdi-speaker"></i><span>Konuşmacılar</span></a></li>
-            <li class="{{ (request()->is('admin')) ? 'active' : '' }}"><a href="{{route('admin.profile')}}"><i
+            <li class="{{ (request()->is('admin')) ? 'active' : '' }}"><a href="{{route('admin.home')}}"><i
                         class="zmdi zmdi-speaker"></i><span>Profil</span></a></li>
         </ul>
     </div>
