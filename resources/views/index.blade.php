@@ -135,9 +135,9 @@
                                     {{$speaker->description}}
                                 </p>
                                 <p>
-                                    <a href="{{$speaker->instagram}}" class="text-white p-2"><span class="icon-facebook"></span></a>
-                                    <a href="{{$speaker->twitter}}" class="text-white p-2"><span class="icon-twitter"></span></a>
-                                    <a href="{{$speaker->linkedin}}" class="text-white p-2"><span class="icon-linkedin"></span></a>
+                                    <a href="{{$speaker->instagram}}" class="text-white p-2 {{isset($speaker->instagram) ? null : 'd-none'}}"><span class="icon-instagram"></span></a>
+                                    <a href="{{$speaker->twitter}}" class="text-white p-2 {{isset($speaker->twitter) ? null : 'd-none'}}"><span class="icon-twitter"></span></a>
+                                    <a href="{{$speaker->linkedin}}" class="text-white p-2 {{isset($speaker->linkedin) ? null : 'd-none'}}"><span class="icon-linkedin"></span></a>
                                 </p>
                             </div>
 
