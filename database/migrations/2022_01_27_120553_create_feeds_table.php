@@ -18,7 +18,6 @@ class CreateFeedsTable extends Migration
             $table->string('title');
             $table->string('description');
             $table->string('image');
-            $table->string('rss_url');
             $table->string('src_url');
             $table->foreignId('user_id');
             $table->timestamps();

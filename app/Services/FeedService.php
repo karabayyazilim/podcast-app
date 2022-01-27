@@ -15,7 +15,6 @@ class FeedService
             'title' => $request->title,
             'description' => $request->description,
             'src_url' => $src_path,
-            'rss_url' => 'aa',
             'user_id' => auth()->id(),
             'image' => $img_path,
         ]);

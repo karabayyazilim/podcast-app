@@ -20,7 +20,9 @@ Route::get('/', [IndexController::class, 'index'])->name('index');
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\IndexController::class, 'index'])->name('home');
+Route::get('/feed', [App\Http\Controllers\IndexController::class, 'feed'])->name('feed');
+Route::get('/feed/{rss_id}', [App\Http\Controllers\IndexController::class, 'feedDetail'])->name('feed.detail');
 
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::get('/home', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('home');

@@ -44,8 +44,8 @@
                                     class="btn btn-danger">Sil
                             </button>
                         </div>
-                        @endforeach
                     </div>
+                    @endforeach
                 </div>
             </div>
         </div>
