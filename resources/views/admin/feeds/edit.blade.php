@@ -51,7 +51,7 @@
 
                                     <div class="form-group">
                                         <h2 class="card-inside-title">Ses Dosyası Seçin</h2>
-                                        <input id="coverImage" type="file" class="form-control" name="src_url"
+                                        <input type="file" class="form-control" name="src_url"
                                                placeholder="Ses Dosyası Seçin"/>
                                     </div>
 
