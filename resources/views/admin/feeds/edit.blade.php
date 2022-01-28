@@ -33,7 +33,7 @@
 
                                 <center>
                                     <div class="img-fluid">
-                                        <img style="width: 80%; height: auto;" src="/storage/{{$feed->image}}"
+                                        <img style="width: auto; height: 300px;" src="/storage/{{$feed->image}}"
                                              id="coverImageShow" alt="feed image">
                                     </div>
                                 </center>

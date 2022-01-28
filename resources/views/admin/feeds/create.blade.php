@@ -32,7 +32,7 @@
 
                                 <center>
                                     <div class="img-fluid">
-                                        <img style="width: 80%; height: auto;" id="coverImageShow" alt="feed image">
+                                        <img style="width: auto; height: 300px;" id="coverImageShow" alt="feed image">
                                     </div>
                                 </center>
                                 <br><br>

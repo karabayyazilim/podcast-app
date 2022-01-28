@@ -34,10 +34,7 @@
                             <span class="blogitem-date">{{$feed->created_at}}</span>
                         </div>
                         <div class="blogitem-content">
-                            <h5><a href=""></a></h5>
-                            <p>{{$feed->description}}</p>
-                            <a href="a" target="_blank"
-                               class="btn btn-outline-dark">Bloğa Git</a>
+                            <h5><a href=""></a>{{$feed->title}}</h5>
                             <a href="{{route('admin.feed.edit',$feed)}}"
                                class="btn btn-info">Düzenle</a>
                             <button onclick="deleteButton(this,`${{route('admin.feed.destroy',$feed)}}`)"
