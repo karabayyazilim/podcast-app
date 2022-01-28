@@ -14,7 +14,7 @@ class IndexController extends Controller
         return view('index', [
             'feeds' => Feed::latest()->paginate(5),
             'latestFeed' => Feed::latest()->first(),
-            'speakers' => Speaker::latest()->get(),
+            'speakers' => Speaker::all(),
         ]);
     }
 
