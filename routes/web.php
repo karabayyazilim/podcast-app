@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\SpeakerController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\Admin\FeedController;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [IndexController::class, 'index'])->name('index');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\IndexController::class, 'index'])->name('home');
 Route::get('/feed', [App\Http\Controllers\IndexController::class, 'feed'])->name('feed');
