@@ -26,7 +26,7 @@ class FeedStoreRequest extends FormRequest
         return [
             'title' => 'required|string',
             'description' => 'required|string',
-            'image' => 'required|file|mimes:jpg,jpeg,png',
+            'image' => 'file|mimes:jpg,jpeg,png',
             'src_url' => 'required|file|mimes:mp3,vav,wv',
         ];
     }

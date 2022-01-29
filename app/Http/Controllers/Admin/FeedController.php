@@ -54,6 +54,7 @@ class FeedController extends Controller
                 'message' => __('İşleminiz başarılı bir şekilde gerçekleştirildi.')
             ]);
         } catch (\Exception $ex) {
+            dd($ex);
             return response([
                 'status' => false,
                 'title' => __('Başarısız'),

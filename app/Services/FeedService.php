@@ -7,9 +7,16 @@ use Illuminate\Support\Facades\Storage;
 
 class FeedService
 {
+    public function __construct(CanvasWriteService $canvasWriteService)
+    {
+        $this->canvasWriteService = $canvasWriteService;
+    }
+
     public function store($request)
     {
-        $img_path = $request->file('image')->store('feeds/images', 'public');
+        $request->hasFile('image') ?
+            $img_path = $request->file('image')->store('feeds/images', 'public') :
+            $img_path = $this->canvasWriteService->handle($request->title, $request->canvas_description);
         $src_path = $request->file('src_url')->store('feeds/sounds', 'public');
         Feed::create([
             'title' => $request->title,

@@ -57,6 +57,10 @@
                                                placeholder="Feed Başlığı Yazınız"/>
                                     </div>
                                     <div class="form-group">
+                                        <input type="text" name="canvas_description" class="form-control"
+                                               placeholder="Canvas Açıklama Yazınız"/>
+                                    </div>
+                                    <div class="form-group">
                                         <textarea rows="4" name="description" class="form-control no-resize" placeholder="Açıklama..."></textarea>
                                     </div>
                                     <button onclick="createAndUpdateButton()" type="button" class="btn btn-primary save-btn">Kaydet</button>
