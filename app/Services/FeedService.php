@@ -19,7 +19,7 @@ class FeedService
             $img_path = $this->canvasWriteService->handle($request->title, $request->canvas_description);
         $src_path = $request->file('src_url')->store('feeds/sounds', 'public');
         Feed::create([
-            'title' => '42 Kafası' . $request->title,
+            'title' => '42 Kafası ' . $request->title,
             'description' => $request->description,
             'src_url' => $src_path,
             'user_id' => auth()->id(),
