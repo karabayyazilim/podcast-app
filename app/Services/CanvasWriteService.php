@@ -14,7 +14,7 @@ class CanvasWriteService
         $img = Image::make(public_path('assets/images/canvas.jpg'));
         $img->text($text, 252.5, 255.5, function($font) {
             $font->file(public_path('assets/fonts/resagnicto/ResagnictoBold.ttf'));
-            $font->size(28);
+            $font->size(32);
             $font->color('#000');
             $font->align('center');
             $font->valign('bottom');
@@ -27,6 +27,7 @@ class CanvasWriteService
             $font->color('#000');
             $font->align('center');
             $font->valign('bottom');
+            $font->kerning(7);
             $font->angle(0);
         });
         $img->save(storage_path('app/public/' . $filePath));
