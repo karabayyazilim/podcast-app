@@ -23,7 +23,7 @@ class CanvasWriteService
         });
         $img->text($description, 252.5, 300, function($font) {
             $font->file(public_path('assets/fonts/resagnicto/ResagnictoBold.ttf'));
-            $font->size(15);
+            $font->size(17);
             $font->color('#000');
             $font->align('center');
             $font->valign('bottom');
