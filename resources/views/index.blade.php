@@ -4,6 +4,9 @@
     <title>42 Kafası</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Bu podcast dünyasında 42 öğrencileri olarak günlük yaşanan kafaları sizlere anlatacağız."/>
+    <meta name="keyword" content="42 istanbul, 42 Kafası, Yazılım okulu radyosu, 42 Kafası podcats"/>
+
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900">
 
