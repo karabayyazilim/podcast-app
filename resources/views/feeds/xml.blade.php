@@ -3,11 +3,11 @@
      version="2.0">
     <channel>
         <title>{{config('setting.rss_title')}}</title>
-        <link>{{route('feed')}}</link>
+        <link>{{config('setting.rss_title')}}</link>
         <description>
             <![CDATA[ {{config('setting.rss_title')}} ]]>
         </description>
-        <atom:link href="{{route('feed')}}" rel="self" type="application/rss+xml"/>
+        <atom:link href="{{config('app.url')}}" rel="self" type="application/rss+xml"/>
         <language>tr</language>
         <category>Self-Improvement</category>
         <copyright>Copyright ALİ KARABAY</copyright>
@@ -16,7 +16,7 @@
                 https://podcast.karabayyazilim.com/storage/{{config('setting.rss_image')}}
             </url>
             <title>{{config('setting.rss_title')}}</title>
-            <link>{{route('feed')}}</link>
+            <link>{{config('setting.rss_title')}}</link>
         </image>
         <lastBuildDate>{{ $feeds->last()->created_at->toAtomString() }}</lastBuildDate>
         <itunes:author>ALİ KARABAY</itunes:author>
