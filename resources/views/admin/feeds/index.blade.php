@@ -26,7 +26,7 @@
             <div class="container">
                 <div class="row">
                     @foreach($feeds as $feed)
-                    <div class="blogitem mb-5 col-lg-6 col-md-6" id="blog-post">
+                    <div class="blogitem mb-5 col-lg-4 col-md-4" id="blog-post">
                         <div class="blogitem-image">
                             <a href="{{route('admin.feed.edit',$feed)}}">
                                 <img width="100%" height="300" src="/storage/{{$feed->image}}" alt="blog image">
