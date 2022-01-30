@@ -101,9 +101,11 @@
                         class="zmdi zmdi-home"></i><span>Anasayfa</span></a></li>
             <li class="{{ (request()->is('admin/feed')) ? 'active' : '' }}"><a href="{{route('admin.feed.index')}}"><i
                         class="zmdi zmdi-radio"></i><span>Podcast</span></a></li>
-            <li class="{{ (request()->is('admin')) ? 'active' : '' }}"><a href="{{route('admin.speaker.index')}}"><i
+            <li class="{{ (request()->is('admin/spreaker')) ? 'active' : '' }}"><a href="{{route('admin.speaker.index')}}"><i
                         class="zmdi zmdi-speaker"></i><span>Konuşmacılar</span></a></li>
-            <li class="{{ (request()->is('admin')) ? 'active' : '' }}"><a href="{{route('admin.home')}}"><i
+            <li class="{{ (request()->is('admin/setting')) ? 'active' : '' }}"><a href="{{route('admin.setting.index')}}"><i
+                        class="zmdi zmdi-settings"></i><span>Site Ayarları</span></a></li>
+            <li class="{{ (request()->is('admin/profile')) ? 'active' : '' }}"><a href="{{route('admin.home')}}"><i
                         class="zmdi zmdi-speaker"></i><span>Profil</span></a></li>
         </ul>
     </div>

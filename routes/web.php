@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\SettingController;
 use App\Http\Controllers\Admin\SpeakerController;
 use App\Http\Controllers\IndexController;
 use App\Http\Controllers\Admin\FeedController;
@@ -30,6 +31,13 @@ Route::prefix('admin')->name('admin.')->middleware('auth')->group(function () {
     Route::get('/home', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('home');
     Route::get('/profile', [App\Http\Controllers\Admin\HomeController::class, 'profile'])->name('profile');
     Route::put('/profile', [App\Http\Controllers\Admin\HomeController::class, 'profileUpdate'])->name('profile.update');
+    Route::prefix('setting')->name('setting.')->group(function () {
+        Route::get('/', [SettingController::class, 'index'])->name('index');
+        Route::post('/create', [SettingController::class, 'store'])->name('create');
+        Route::delete('/delete/{setting}', [SettingController::class, 'destroy'])->name('destroy');
+        Route::get('/{setting}/edit/', [SettingController::class, 'edit'])->name('edit');
+        Route::put('/{setting}/edit/', [SettingController::class, 'update'])->name('update');
+    });
     Route::resource('feed', FeedController::class);
     Route::resource('speaker', SpeakerController::class);
 });
