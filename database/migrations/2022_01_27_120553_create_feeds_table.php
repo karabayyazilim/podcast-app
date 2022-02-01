@@ -15,10 +15,10 @@ class CreateFeedsTable extends Migration
     {
         Schema::create('feeds', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('description');
-            $table->string('image');
-            $table->string('src_url');
+            $table->string('title',255);
+            $table->string('description',600);
+            $table->string('image',255);
+            $table->string('src_url',255);
             $table->foreignId('user_id');
             $table->timestamps();
         });
