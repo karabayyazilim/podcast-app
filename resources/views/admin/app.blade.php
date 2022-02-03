@@ -83,7 +83,7 @@
 <aside id="leftsidebar" class="sidebar">
     <div class="navbar-brand">
         <button class="btn-menu ls-toggle-btn" type="button"><i class="zmdi zmdi-menu"></i></button>
-        <a href="/"><span class="m-l-10">Karabay Yazılım</span></a>
+        <a href="/"><span class="m-l-2">Podcast Yönetim Paneli</span></a>
     </div>
     <div class="menu">
         <ul class="list">
@@ -105,7 +105,7 @@
                         class="zmdi zmdi-speaker"></i><span>Konuşmacılar</span></a></li>
             <li class="{{ (request()->is('admin/setting')) ? 'active' : '' }}"><a href="{{route('admin.setting.index')}}"><i
                         class="zmdi zmdi-settings"></i><span>Site Ayarları</span></a></li>
-            <li class="{{ (request()->is('admin/profile')) ? 'active' : '' }}"><a href="{{route('admin.home')}}"><i
+            <li class="{{ (request()->is('admin/profile')) ? 'active' : '' }}"><a href="{{route('admin.profile')}}"><i
                         class="zmdi zmdi-speaker"></i><span>Profil</span></a></li>
         </ul>
     </div>

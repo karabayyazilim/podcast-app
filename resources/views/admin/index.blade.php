@@ -7,7 +7,7 @@
             <div class="block-header">
                 <div class="row">
                     <div class="col-lg-7 col-md-6 col-sm-12">
-                        <h2>Karabay Yazılım</h2>
+                        <h2>Podcast Yönetim Paneli</h2>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{route('admin.home')}}"><i
                                         class="zmdi zmdi-home"></i> Admin</a>
