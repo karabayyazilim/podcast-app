@@ -42,6 +42,25 @@
         h3 {
             color: #50a5a0;
         }
+
+        .spotify > span{
+            color: #000000;
+            font-size: 100px;
+        }
+
+        .google > span{
+            color: #000000;
+            font-size: 100px;
+        }
+
+        .spotify > .icon-spotify:hover {
+            color: gray;
+        }
+
+        .google > .icon-google:hover {
+            color: gray;
+        }
+
     </style>
 
 </head>
@@ -96,6 +115,13 @@
 
     <div class="site-section bg-light">
         <div class="container">
+            <div class="row mb-5" data-aos="fade-up">
+                <div class="col-md-12 text-center">
+                    <h2 class="font-weight-bold text-black mb-5">Bizi Takip Edin</h2>
+                    <a href="{{config('setting.spotify_podcast_link')}}" target="_blank" class="text-dark p-3 mr-3 spotify"><span class="icon-spotify"></span></a>
+                    <a href="{{config('setting.google_podcast_link')}}" target="_blank" class="text-dark p-4 google"><span class="icon-google"></span></a>
+                </div>
+            </div>
 
             <div class="row mb-5" data-aos="fade-up">
                 <div class="col-md-12 text-center">
