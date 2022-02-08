@@ -50,7 +50,7 @@
                 <link>
                     {{route('feed.detail',$feed->id)}}</link>
                 <guid isPermaLink="false">{{route('feed.detail',$feed->id)}}</guid>
-                <pubDate>Tue, 23 Mar 2021 12:55:05 +0000</pubDate>
+                <pubDate>{{ $feed->created_at->toAtomString() }}</pubDate>
                 <enclosure
                     url="https://podcast.karabayyazilim.com/storage/{{$feed->src_url}}"
                     length="8997738" type="audio/mpeg"/>
