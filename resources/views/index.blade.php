@@ -143,7 +143,7 @@
 
                         <div class="player">
                             <audio id="player2" preload="none" controls style="max-width: 100%">
-                                <source src="/storage/{{$feed->src_url}}"
+                                <source src="{{str_contains($feed->src_url, 'https://') ? $feed->src_url : 'storage/'. $feed->src_url}}"
                                         type="audio/mp3">
                             </audio>
                         </div>
