@@ -52,7 +52,7 @@ class FeedService
     {
         $feed = Feed::findOrFail($id);
         Storage::disk('public')->delete($feed->image);
-        Storage::disk('s3')->delete($feed->src_url);
+        Storage::disk('s3')->delete(str_replace('.com/', '', strchr($feed->src_url, '.com/')));
         $feed->delete();
     }
 }
