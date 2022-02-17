@@ -52,7 +52,7 @@
                 <guid isPermaLink="false">{{route('feed.detail',$feed->id)}}</guid>
                 <pubDate>{{ $feed->created_at->toAtomString() }}</pubDate>
                 <enclosure
-                    url="{{str_contains($feed->src_url, 'https://') ? $feed->src_url : onfig('app.url'). '/storage/'. $feed->src_url}}"
+                    url="{{str_contains($feed->src_url, 'https://') ? $feed->src_url : onfig('app.url'). 'storage/'. $feed->src_url}}"
                     length="8997738" type="audio/mpeg"/>
                 <itunes:author>ALİ KARABAY</itunes:author>
                 <itunes:duration>560</itunes:duration>
